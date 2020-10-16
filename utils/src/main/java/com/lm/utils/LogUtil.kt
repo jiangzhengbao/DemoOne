@@ -6,7 +6,11 @@ import android.util.Log
  */
 object LogUtil {
     private const val TAG="LogUtil"
-    private val DEBUG= BuildConfig.DEBUG
+    private var DEBUG= BuildConfig.DEBUG
+
+    fun setDebug(debug:Boolean){
+        this.DEBUG=debug
+    }
 
     fun d(msg:String){
         if (DEBUG) Log.d(TAG,msg)
