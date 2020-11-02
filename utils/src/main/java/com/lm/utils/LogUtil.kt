@@ -12,6 +12,10 @@ object LogUtil {
         this.DEBUG=debug
     }
 
+    fun isDebug():Boolean{
+        return  this.DEBUG
+    }
+
     fun d(msg:String){
         if (DEBUG) Log.d(TAG,msg)
     }
