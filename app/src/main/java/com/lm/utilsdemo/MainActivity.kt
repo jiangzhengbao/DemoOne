@@ -1,5 +1,6 @@
 package com.lm.utilsdemo
 
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.lm.utils.LogUtil
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         printLog("Hello Everyone!")
+
     }
 
 
